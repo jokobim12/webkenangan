@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family:  "Roboto", sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Untuk Chrome, Safari, dan Opera */
+}
+
+h1,h2,h3,h4,h5,h6, strong{
+    color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+span{
+    color: #833258;
+}
+
+input, textarea{
+   color: rgb(0, 0, 0);
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1200px) {
+    .main-container{
+        width:90%;
+    }
+}
+
+
+/* burger */
+.burger div{
+    width: 25px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    margin: 7px;
+    transition: all.3s;
+    z-index: 99;
+}
+
+.burger{
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+
+
+.section-title{
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+.pre-title{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: rgb(75, 75, 75);
+    text-transform:uppercase;
+    letter-spacing: .3rem;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-size: 1rem;
+}
+
+.pre-title::before{
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color:rgb(75, 75, 75);
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 50%;
+}
+
+/* layout */
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+/* Logo dan navigasi menu */
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Pastikan navbar tetap memenuhi lebar layar */
+    background-color: rgba(255, 255, 255, 0.493); /* Sesuaikan dengan desain */
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between; /* Membuat elemen rata kanan dan kiri */
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan agar lebih jelas */
+    z-index: 1000; /* Agar tetap di atas elemen lain */
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.logo a{
+    color:#833258;
+}
+
+.nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li a{
+    color: black;
+}
+
+.nav ul li a:hover{
+    color: #833258;
+    transition: all .2s ease-in-out;
+    text-decoration: underline;
+    text-decoration-thickness: 2px; /* Ketebalan garis */
+    text-underline-offset: 5px; /* Jarak garis dari teks */
+}
+
+#hero{
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-name{
+    font-family: "Poppins", sans-serif;
+    margin: .5rem 0 1rem;
+}
+
+.hero-right img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-right{
+    display: flex;
+    justify-content: center;
+}
+
+/* tentang kami */
+#tentangkami{
+    padding: 6rem 0;
+    background-color: rgba(223, 223, 223, 0.432);
+   
+}
+
+.tentangkamiku{
+    border-radius: .5rem;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.089);
+    background-color: white;
+    justify-content: left;
+}
+
+
+.tentangkami-cover{
+    height: 400px;
+}
+
+.tentangkami-cover img{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+    filter: grayscale(30%);
+}
+
+.tentangkami-info{
+    padding: 2rem 1.5rem;
+
+}
+
+.tentangkami-title{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 1rem;
+}
+
+.tentangkami h4{
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.tentangkami-tags ul li{
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+
+}
+
+.btn-submit{
+    margin-top: .5rem;
+    font-size: .5rem;
+    width: 50%;
+    padding: .5rem .5rem;
+    background-color: #833258;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.btn-submit:hover{
+    background-color: #2e121f;
+}
+
+#galeri{
+    padding: 6rem 0;
+}
+
+.galer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40vh;
+    max-width: 30vh;
+    /* background-color: rgb(163, 163, 163); */
+}
+
+.galeri-img{
+    width: 200px;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    position: relative;
+    max-width: 100%;
+    display: block;
+}
+
+.galeri-img:hover img{
+    transform: scale(1.2);
+}
+
+.galeri-img .kata{
+    position: absolute;
+    z-index: 1;
+    background-color:rgba(0, 0, 0, 0.432);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s all ease-in-out;
+}
+
+.galeri-img:hover .kata{
+    opacity: 0;
+}
+
+.galeri-img .kata p{
+    font-size: 1rem;
+    color: white;
+}
+.galeri-img img{    
+    width: 100%;
+    aspect-ratio: 3/4;
+    transition: .5s ease-in-out;
+    object-fit: cover;
+}
+
+.foto{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    height: auto;
+}
+
+/* sosmed */
+#sosmed{
+    padding: 6rem 0;
+    background-color: rgba(223, 223, 223, 0.432) ;
+}

@@ -1,0 +1,209 @@
+@media screen and (max-width:1000px) {
+    p{
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+
+    .grid-3{
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:825px) {
+    /* burger */
+
+    .main-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    p{
+        font-size: .8rem;
+        line-height: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+        top: 4.5%;
+        transform: translateY(-50%);
+    }
+
+    .toogle-burger .line-1{
+        transform: rotate(-45deg) translate(-5px, 7px);
+    }
+
+    .toogle-burger .line-2{
+        opacity: 0;
+    }
+
+    .toogle-burger .line-3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+    
+    /* nav */
+    nav{
+        position: fixed;
+        width: 50%;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.842);
+        z-index: 9;
+        transform: translateX(150%);
+        transition: .4s ease-in-out;
+    }
+
+    .nav ul{
+        height: 70vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+
+    .nav-active{
+        transform: translateX(0);
+    }
+
+    :root{
+        --sectionPadding: 4rem 0;
+    }
+
+    .section-title{
+        font-size: 1.5rem;
+        margin: 1rem 2.5rem;
+    }
+
+    .pre-title{
+        font-size: .8rem;
+    }
+
+    #hero{
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
+
+    .hero-right{
+        order: -1;
+    }
+
+    .hero-right img{
+        width: 60%;
+        margin-top: 20%;
+    }
+
+    .hero-name{
+        font-size: .9rem;
+    }
+
+    p{
+        font-size: .8rem;
+    }
+
+    .tentangkami-tags{
+        display: flex;
+        gap: 1rem;
+        margin: 1rem 0;
+        flex-wrap: wrap; /* Agar tombol tetap dalam baris */
+        overflow: hidden; /* Mencegah teks keluar */
+        max-width: 100%; /* Agar tidak melebihi batas */
+        justify-content: center;
+    }
+
+    .tentangkami-title{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    /* margin top */
+
+    #galeri{
+        padding: 2rem 0;
+    }
+
+    #tentangkami{
+        padding: 2rem 0;
+    }
+
+    #sosmed{
+        padding: 2rem 0;
+        background-color: rgba(223, 223, 223, 0.432) ;
+    }
+
+    /* end */
+    .pre-title{
+        font-size: .8rem;
+    }
+
+    .section-title{
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .galer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 10vh;
+        max-width: 20vh;
+        border-radius: 3px;
+        /* background-color: rgb(163, 163, 163); */
+    }
+
+    .galeri-img{
+        /* border-radius: 2px; */
+        width: 100px;
+        aspect-ratio: 3/4;
+        overflow: hidden;
+        position: relative;
+        max-width: 100%;
+        background-color: black;
+    }
+
+    galeri-img .kata{
+        position: absolute;
+        z-index: 1;
+        background-color:rgba(0, 0, 0, 0.432);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s all ease-in-out;
+    }
+    
+    .galeri-img:hover .kata{
+        opacity: 0;
+    }
+    
+    .galeri-img .kata p{
+        font-size: .7rem;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20%;
+    }   
+
+    .sosmed-item-icon{
+        margin-left: 46%;
+    }
+
+    .desc{
+        text-align: center;
+    }
+
+    .footer{
+        padding: 1.5rem 0;
+        text-align: center;
+        background-color: rgba(73, 73, 73, 0.432);
+    }
+  
+}
