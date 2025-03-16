@@ -323,3 +323,53 @@ a{
     padding: 6rem 0;
     background-color: rgba(223, 223, 223, 0.432) ;
 }
+
+/* Kontak */
+#kontak{
+    padding: 6rem 0;
+}
+
+.kontak{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.kontak-form div{
+    margin-bottom: 1.4rem;
+}
+
+.kontak-form input, .kontak-form textarea{
+    width: 100%;
+    padding: .75rem 1.4rem;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(182, 182, 182, 0.158);
+    border: 1px solid rgba(160, 160, 160, 0.192);
+    border-radius: 3px;
+    resize: none;
+}
+
+.kontak-form input::placeholder, .kontak-form textarea::placeholder{
+    color: rgb(170, 170, 170);
+}
+
+.kontak-form input:focus, .kontak-form textarea:focus{
+    outline: none;
+    border: 1px solid rgb(107, 107, 107);
+}
+
+.btn-submit{
+    width: 100%;
+    padding: .75rem 1.4rem;
+    background-color:#833258;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+}
+
+.btn-submit:hover{
+    background-color: #301522;
+}
