@@ -138,6 +138,10 @@
         background-color: rgba(223, 223, 223, 0.432) ;
     }
 
+    #kontak{
+        padding: 2rem 0;
+    }
+
     /* end */
     .pre-title{
         font-size: .8rem;
