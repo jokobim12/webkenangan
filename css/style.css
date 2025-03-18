@@ -209,7 +209,7 @@ a{
     height: 100%;
     object-fit: cover;
     display: inline-block;
-    filter: grayscale(30%);
+    filter: grayscale(50%);
 }
 
 .tentangkami-info{
