@@ -329,6 +329,16 @@ a{
     background-color: rgba(223, 223, 223, 0.432) ;
 }
 
+
+.sosmed-item-icon{
+    margin-left: 47%;
+}
+
+.desc{
+    text-align: center;
+}
+
+
 /* Kontak */
 #kontak{
     padding: 6rem 0;
@@ -373,8 +383,15 @@ a{
     cursor: pointer;
     transition: .3s ease-in-out;
     font-family: "Poppins", sans-serif;
+    font-size: 1rem;
 }
 
 .btn-submit:hover{
     background-color: #301522;
+}
+
+.footer{
+    padding: .9rem;
+    background-color: rgb(165, 165, 165);
+    text-align: center;
 }
