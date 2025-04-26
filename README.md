@@ -1,2 +1,2 @@
 # webkenangan
-web saya dan chantika
+web saya dengan masa lalu saya
